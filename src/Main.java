@@ -10,11 +10,21 @@ public class Main {
 
         // Using an overloaded constructor
         Member member2 = new Member("Jane Doe", "123 High St", null, "Austin", "TX", "78701", "1999-04-22");
+        // Uses the toString method to print object
         System.out.println(member2);
 
         // Using getter and setter methods to change the object
         System.out.println("before changing name " + member1.getName());
         member1.setName("Eric Abell");
         System.out.println("after changing name " + member1.getName());
+
+        // BRANCHES
+        Branch branch1 = new Branch("123 Main Street", "Apt 234", "Austin", "TX", "78709", "9am-5pm");
+        System.out.println(branch1);
+
+        // Using getter and setter methods to change the object
+        System.out.println("before changing addressLine1 " + branch1.getAddressLine1());
+        branch1.setAddressLine1("456 Seattle Street");
+        System.out.println("after changing addressLine1 " + branch1.getAddressLine1());
     }
 }
