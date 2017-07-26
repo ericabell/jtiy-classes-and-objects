@@ -7,6 +7,10 @@ public class Branch {
 
     }
 
+    public Branch( String rawAddressString) {
+        this.address = new Address(rawAddressString);
+    }
+
     public Branch( String addressLine1, String addressLine2, String city, String stateAbbr, String zip, String hours) {
         this.address = new Address(addressLine1, addressLine2, city, stateAbbr, zip);
 

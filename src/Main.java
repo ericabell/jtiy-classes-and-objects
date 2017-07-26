@@ -26,5 +26,10 @@ public class Main {
         System.out.println("before changing addressLine1 " + branch1.getAddressLine1());
         branch1.setAddressLine1("456 Seattle Street");
         System.out.println("after changing addressLine1 " + branch1.getAddressLine1());
+
+        // EPIC -- parse raw address string input
+        System.out.println("EPIC MODE TEST");
+        Branch branch2 = new Branch("123 Main St, Apt 543, Austin, TX, 78709, 9am-4pm");
+        System.out.println(branch2);
     }
 }
