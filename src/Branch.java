@@ -5,6 +5,11 @@ public class Branch {
     public Branch() {
     }
 
+    public Branch(Address address, String hours) {
+        this.address = address;
+        this.hours = hours;
+    }
+
     public Branch(String addressLine1, String addressLine2, String city, String stateAbbr, String zip, String hours) {
         this.address = new Address(addressLine1, addressLine2, city, stateAbbr, zip);
         this.hours = hours;
