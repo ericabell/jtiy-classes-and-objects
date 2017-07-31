@@ -4,6 +4,8 @@ public class Member {
     String name;
     Address address;
     // Adventure: Member can have multiple addresses
+
+    // GP: multiple addresses should be List<Address>
     Address addressBackup;
     Address addressBackup2;
     java.time.LocalDate dob;
